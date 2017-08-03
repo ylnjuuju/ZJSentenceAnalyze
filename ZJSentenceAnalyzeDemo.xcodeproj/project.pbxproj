@@ -1,0 +1,631 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F25F90A61F317DC800FBFE87 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F25F90A51F317DC800FBFE87 /* main.m */; };
+		F25F90A91F317DC800FBFE87 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F25F90A81F317DC800FBFE87 /* AppDelegate.m */; };
+		F25F90AC1F317DC800FBFE87 /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = F25F90AB1F317DC800FBFE87 /* ViewController.mm */; };
+		F25F90AF1F317DC800FBFE87 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F25F90AD1F317DC800FBFE87 /* Main.storyboard */; };
+		F25F90B11F317DC800FBFE87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F25F90B01F317DC800FBFE87 /* Assets.xcassets */; };
+		F25F90B41F317DC800FBFE87 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F25F90B21F317DC800FBFE87 /* LaunchScreen.storyboard */; };
+		F25F90BF1F317DC800FBFE87 /* ZJSentenceAnalyzeDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F25F90BE1F317DC800FBFE87 /* ZJSentenceAnalyzeDemoTests.m */; };
+		F25F90CA1F317DC800FBFE87 /* ZJSentenceAnalyzeDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F25F90C91F317DC800FBFE87 /* ZJSentenceAnalyzeDemoUITests.m */; };
+		F25F90FB1F31804700FBFE87 /* iosjieba.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F25F90F81F31804700FBFE87 /* iosjieba.bundle */; };
+		F25F90FC1F31804700FBFE87 /* Segmentor.mm in Sources */ = {isa = PBXBuildFile; fileRef = F25F90FA1F31804700FBFE87 /* Segmentor.mm */; };
+		F25F90FF1F3180E900FBFE87 /* BASentenceModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F25F90FE1F3180E900FBFE87 /* BASentenceModel.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F25F90BB1F317DC800FBFE87 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F25F90991F317DC700FBFE87 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F25F90A01F317DC800FBFE87;
+			remoteInfo = ZJSentenceAnalyzeDemo;
+		};
+		F25F90C61F317DC800FBFE87 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F25F90991F317DC700FBFE87 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F25F90A01F317DC800FBFE87;
+			remoteInfo = ZJSentenceAnalyzeDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F25F90A11F317DC800FBFE87 /* ZJSentenceAnalyzeDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZJSentenceAnalyzeDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F25F90A51F317DC800FBFE87 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F25F90A71F317DC800FBFE87 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F25F90A81F317DC800FBFE87 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F25F90AA1F317DC800FBFE87 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F25F90AB1F317DC800FBFE87 /* ViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
+		F25F90AE1F317DC800FBFE87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F25F90B01F317DC800FBFE87 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F25F90B31F317DC800FBFE87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F25F90B51F317DC800FBFE87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F25F90BA1F317DC800FBFE87 /* ZJSentenceAnalyzeDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZJSentenceAnalyzeDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F25F90BE1F317DC800FBFE87 /* ZJSentenceAnalyzeDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZJSentenceAnalyzeDemoTests.m; sourceTree = "<group>"; };
+		F25F90C01F317DC800FBFE87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F25F90C51F317DC800FBFE87 /* ZJSentenceAnalyzeDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZJSentenceAnalyzeDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F25F90C91F317DC800FBFE87 /* ZJSentenceAnalyzeDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZJSentenceAnalyzeDemoUITests.m; sourceTree = "<group>"; };
+		F25F90CB1F317DC800FBFE87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F25F90D91F31804700FBFE87 /* DictTrie.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = DictTrie.hpp; sourceTree = "<group>"; };
+		F25F90DA1F31804700FBFE87 /* FullSegment.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = FullSegment.hpp; sourceTree = "<group>"; };
+		F25F90DB1F31804700FBFE87 /* HMMSegment.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = HMMSegment.hpp; sourceTree = "<group>"; };
+		F25F90DC1F31804700FBFE87 /* ISegment.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ISegment.hpp; sourceTree = "<group>"; };
+		F25F90DD1F31804700FBFE87 /* KeywordExtractor.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = KeywordExtractor.hpp; sourceTree = "<group>"; };
+		F25F90DF1F31804700FBFE87 /* ArgvContext.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ArgvContext.hpp; sourceTree = "<group>"; };
+		F25F90E01F31804700FBFE87 /* BlockingQueue.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = BlockingQueue.hpp; sourceTree = "<group>"; };
+		F25F90E11F31804700FBFE87 /* BoundedQueue.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = BoundedQueue.hpp; sourceTree = "<group>"; };
+		F25F90E21F31804700FBFE87 /* CastFloat.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CastFloat.hpp; sourceTree = "<group>"; };
+		F25F90E31F31804700FBFE87 /* Condition.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Condition.hpp; sourceTree = "<group>"; };
+		F25F90E41F31804700FBFE87 /* Config.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Config.hpp; sourceTree = "<group>"; };
+		F25F90E51F31804700FBFE87 /* HandyMacro.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = HandyMacro.hpp; sourceTree = "<group>"; };
+		F25F90E61F31804700FBFE87 /* InitOnOff.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = InitOnOff.hpp; sourceTree = "<group>"; };
+		F25F90E71F31804700FBFE87 /* LocalVector.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = LocalVector.hpp; sourceTree = "<group>"; };
+		F25F90E81F31804700FBFE87 /* Logger.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Logger.hpp; sourceTree = "<group>"; };
+		F25F90E91F31804700FBFE87 /* Md5.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Md5.hpp; sourceTree = "<group>"; };
+		F25F90EA1F31804700FBFE87 /* MutexLock.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = MutexLock.hpp; sourceTree = "<group>"; };
+		F25F90EB1F31804700FBFE87 /* MysqlClient.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = MysqlClient.hpp; sourceTree = "<group>"; };
+		F25F90EC1F31804700FBFE87 /* NonCopyable.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = NonCopyable.hpp; sourceTree = "<group>"; };
+		F25F90ED1F31804700FBFE87 /* StdExtension.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = StdExtension.hpp; sourceTree = "<group>"; };
+		F25F90EE1F31804700FBFE87 /* StringUtil.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = StringUtil.hpp; sourceTree = "<group>"; };
+		F25F90EF1F31804700FBFE87 /* Thread.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Thread.hpp; sourceTree = "<group>"; };
+		F25F90F01F31804700FBFE87 /* ThreadPool.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ThreadPool.hpp; sourceTree = "<group>"; };
+		F25F90F11F31804700FBFE87 /* MixSegment.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = MixSegment.hpp; sourceTree = "<group>"; };
+		F25F90F21F31804700FBFE87 /* MPSegment.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = MPSegment.hpp; sourceTree = "<group>"; };
+		F25F90F31F31804700FBFE87 /* PosTagger.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = PosTagger.hpp; sourceTree = "<group>"; };
+		F25F90F41F31804700FBFE87 /* QuerySegment.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = QuerySegment.hpp; sourceTree = "<group>"; };
+		F25F90F51F31804700FBFE87 /* SegmentBase.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = SegmentBase.hpp; sourceTree = "<group>"; };
+		F25F90F61F31804700FBFE87 /* TransCode.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = TransCode.hpp; sourceTree = "<group>"; };
+		F25F90F71F31804700FBFE87 /* Trie.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Trie.hpp; sourceTree = "<group>"; };
+		F25F90F81F31804700FBFE87 /* iosjieba.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = iosjieba.bundle; sourceTree = "<group>"; };
+		F25F90F91F31804700FBFE87 /* Segmentor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Segmentor.h; sourceTree = "<group>"; };
+		F25F90FA1F31804700FBFE87 /* Segmentor.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Segmentor.mm; sourceTree = "<group>"; };
+		F25F90FD1F3180E900FBFE87 /* BASentenceModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BASentenceModel.h; sourceTree = "<group>"; };
+		F25F90FE1F3180E900FBFE87 /* BASentenceModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BASentenceModel.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F25F909E1F317DC800FBFE87 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F25F90B71F317DC800FBFE87 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F25F90C21F317DC800FBFE87 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F25F90981F317DC700FBFE87 = {
+			isa = PBXGroup;
+			children = (
+				F25F90A31F317DC800FBFE87 /* ZJSentenceAnalyzeDemo */,
+				F25F90BD1F317DC800FBFE87 /* ZJSentenceAnalyzeDemoTests */,
+				F25F90C81F317DC800FBFE87 /* ZJSentenceAnalyzeDemoUITests */,
+				F25F90A21F317DC800FBFE87 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F25F90A21F317DC800FBFE87 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F25F90A11F317DC800FBFE87 /* ZJSentenceAnalyzeDemo.app */,
+				F25F90BA1F317DC800FBFE87 /* ZJSentenceAnalyzeDemoTests.xctest */,
+				F25F90C51F317DC800FBFE87 /* ZJSentenceAnalyzeDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F25F90A31F317DC800FBFE87 /* ZJSentenceAnalyzeDemo */ = {
+			isa = PBXGroup;
+			children = (
+				F25F90D71F31804700FBFE87 /* iOSJieba */,
+				F25F90A71F317DC800FBFE87 /* AppDelegate.h */,
+				F25F90A81F317DC800FBFE87 /* AppDelegate.m */,
+				F25F90AA1F317DC800FBFE87 /* ViewController.h */,
+				F25F90AB1F317DC800FBFE87 /* ViewController.mm */,
+				F25F90AD1F317DC800FBFE87 /* Main.storyboard */,
+				F25F90B01F317DC800FBFE87 /* Assets.xcassets */,
+				F25F90B21F317DC800FBFE87 /* LaunchScreen.storyboard */,
+				F25F90B51F317DC800FBFE87 /* Info.plist */,
+				F25F90A41F317DC800FBFE87 /* Supporting Files */,
+			);
+			path = ZJSentenceAnalyzeDemo;
+			sourceTree = "<group>";
+		};
+		F25F90A41F317DC800FBFE87 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F25F90A51F317DC800FBFE87 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F25F90BD1F317DC800FBFE87 /* ZJSentenceAnalyzeDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				F25F90BE1F317DC800FBFE87 /* ZJSentenceAnalyzeDemoTests.m */,
+				F25F90C01F317DC800FBFE87 /* Info.plist */,
+			);
+			path = ZJSentenceAnalyzeDemoTests;
+			sourceTree = "<group>";
+		};
+		F25F90C81F317DC800FBFE87 /* ZJSentenceAnalyzeDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F25F90C91F317DC800FBFE87 /* ZJSentenceAnalyzeDemoUITests.m */,
+				F25F90CB1F317DC800FBFE87 /* Info.plist */,
+			);
+			path = ZJSentenceAnalyzeDemoUITests;
+			sourceTree = "<group>";
+		};
+		F25F90D71F31804700FBFE87 /* iOSJieba */ = {
+			isa = PBXGroup;
+			children = (
+				F25F90FD1F3180E900FBFE87 /* BASentenceModel.h */,
+				F25F90FE1F3180E900FBFE87 /* BASentenceModel.m */,
+				F25F90D81F31804700FBFE87 /* CppJieba */,
+				F25F90F81F31804700FBFE87 /* iosjieba.bundle */,
+				F25F90F91F31804700FBFE87 /* Segmentor.h */,
+				F25F90FA1F31804700FBFE87 /* Segmentor.mm */,
+			);
+			path = iOSJieba;
+			sourceTree = "<group>";
+		};
+		F25F90D81F31804700FBFE87 /* CppJieba */ = {
+			isa = PBXGroup;
+			children = (
+				F25F90D91F31804700FBFE87 /* DictTrie.hpp */,
+				F25F90DA1F31804700FBFE87 /* FullSegment.hpp */,
+				F25F90DB1F31804700FBFE87 /* HMMSegment.hpp */,
+				F25F90DC1F31804700FBFE87 /* ISegment.hpp */,
+				F25F90DD1F31804700FBFE87 /* KeywordExtractor.hpp */,
+				F25F90DE1F31804700FBFE87 /* Limonp */,
+				F25F90F11F31804700FBFE87 /* MixSegment.hpp */,
+				F25F90F21F31804700FBFE87 /* MPSegment.hpp */,
+				F25F90F31F31804700FBFE87 /* PosTagger.hpp */,
+				F25F90F41F31804700FBFE87 /* QuerySegment.hpp */,
+				F25F90F51F31804700FBFE87 /* SegmentBase.hpp */,
+				F25F90F61F31804700FBFE87 /* TransCode.hpp */,
+				F25F90F71F31804700FBFE87 /* Trie.hpp */,
+			);
+			path = CppJieba;
+			sourceTree = "<group>";
+		};
+		F25F90DE1F31804700FBFE87 /* Limonp */ = {
+			isa = PBXGroup;
+			children = (
+				F25F90DF1F31804700FBFE87 /* ArgvContext.hpp */,
+				F25F90E01F31804700FBFE87 /* BlockingQueue.hpp */,
+				F25F90E11F31804700FBFE87 /* BoundedQueue.hpp */,
+				F25F90E21F31804700FBFE87 /* CastFloat.hpp */,
+				F25F90E31F31804700FBFE87 /* Condition.hpp */,
+				F25F90E41F31804700FBFE87 /* Config.hpp */,
+				F25F90E51F31804700FBFE87 /* HandyMacro.hpp */,
+				F25F90E61F31804700FBFE87 /* InitOnOff.hpp */,
+				F25F90E71F31804700FBFE87 /* LocalVector.hpp */,
+				F25F90E81F31804700FBFE87 /* Logger.hpp */,
+				F25F90E91F31804700FBFE87 /* Md5.hpp */,
+				F25F90EA1F31804700FBFE87 /* MutexLock.hpp */,
+				F25F90EB1F31804700FBFE87 /* MysqlClient.hpp */,
+				F25F90EC1F31804700FBFE87 /* NonCopyable.hpp */,
+				F25F90ED1F31804700FBFE87 /* StdExtension.hpp */,
+				F25F90EE1F31804700FBFE87 /* StringUtil.hpp */,
+				F25F90EF1F31804700FBFE87 /* Thread.hpp */,
+				F25F90F01F31804700FBFE87 /* ThreadPool.hpp */,
+			);
+			path = Limonp;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F25F90A01F317DC800FBFE87 /* ZJSentenceAnalyzeDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F25F90CE1F317DC800FBFE87 /* Build configuration list for PBXNativeTarget "ZJSentenceAnalyzeDemo" */;
+			buildPhases = (
+				F25F909D1F317DC800FBFE87 /* Sources */,
+				F25F909E1F317DC800FBFE87 /* Frameworks */,
+				F25F909F1F317DC800FBFE87 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZJSentenceAnalyzeDemo;
+			productName = ZJSentenceAnalyzeDemo;
+			productReference = F25F90A11F317DC800FBFE87 /* ZJSentenceAnalyzeDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F25F90B91F317DC800FBFE87 /* ZJSentenceAnalyzeDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F25F90D11F317DC800FBFE87 /* Build configuration list for PBXNativeTarget "ZJSentenceAnalyzeDemoTests" */;
+			buildPhases = (
+				F25F90B61F317DC800FBFE87 /* Sources */,
+				F25F90B71F317DC800FBFE87 /* Frameworks */,
+				F25F90B81F317DC800FBFE87 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F25F90BC1F317DC800FBFE87 /* PBXTargetDependency */,
+			);
+			name = ZJSentenceAnalyzeDemoTests;
+			productName = ZJSentenceAnalyzeDemoTests;
+			productReference = F25F90BA1F317DC800FBFE87 /* ZJSentenceAnalyzeDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F25F90C41F317DC800FBFE87 /* ZJSentenceAnalyzeDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F25F90D41F317DC800FBFE87 /* Build configuration list for PBXNativeTarget "ZJSentenceAnalyzeDemoUITests" */;
+			buildPhases = (
+				F25F90C11F317DC800FBFE87 /* Sources */,
+				F25F90C21F317DC800FBFE87 /* Frameworks */,
+				F25F90C31F317DC800FBFE87 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F25F90C71F317DC800FBFE87 /* PBXTargetDependency */,
+			);
+			name = ZJSentenceAnalyzeDemoUITests;
+			productName = ZJSentenceAnalyzeDemoUITests;
+			productReference = F25F90C51F317DC800FBFE87 /* ZJSentenceAnalyzeDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F25F90991F317DC700FBFE87 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = ZJ;
+				TargetAttributes = {
+					F25F90A01F317DC800FBFE87 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 724LG2HP95;
+						ProvisioningStyle = Automatic;
+					};
+					F25F90B91F317DC800FBFE87 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F25F90A01F317DC800FBFE87;
+					};
+					F25F90C41F317DC800FBFE87 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F25F90A01F317DC800FBFE87;
+					};
+				};
+			};
+			buildConfigurationList = F25F909C1F317DC700FBFE87 /* Build configuration list for PBXProject "ZJSentenceAnalyzeDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F25F90981F317DC700FBFE87;
+			productRefGroup = F25F90A21F317DC800FBFE87 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F25F90A01F317DC800FBFE87 /* ZJSentenceAnalyzeDemo */,
+				F25F90B91F317DC800FBFE87 /* ZJSentenceAnalyzeDemoTests */,
+				F25F90C41F317DC800FBFE87 /* ZJSentenceAnalyzeDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F25F909F1F317DC800FBFE87 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F25F90B41F317DC800FBFE87 /* LaunchScreen.storyboard in Resources */,
+				F25F90FB1F31804700FBFE87 /* iosjieba.bundle in Resources */,
+				F25F90B11F317DC800FBFE87 /* Assets.xcassets in Resources */,
+				F25F90AF1F317DC800FBFE87 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F25F90B81F317DC800FBFE87 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F25F90C31F317DC800FBFE87 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F25F909D1F317DC800FBFE87 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F25F90FC1F31804700FBFE87 /* Segmentor.mm in Sources */,
+				F25F90AC1F317DC800FBFE87 /* ViewController.mm in Sources */,
+				F25F90A91F317DC800FBFE87 /* AppDelegate.m in Sources */,
+				F25F90A61F317DC800FBFE87 /* main.m in Sources */,
+				F25F90FF1F3180E900FBFE87 /* BASentenceModel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F25F90B61F317DC800FBFE87 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F25F90BF1F317DC800FBFE87 /* ZJSentenceAnalyzeDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F25F90C11F317DC800FBFE87 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F25F90CA1F317DC800FBFE87 /* ZJSentenceAnalyzeDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F25F90BC1F317DC800FBFE87 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F25F90A01F317DC800FBFE87 /* ZJSentenceAnalyzeDemo */;
+			targetProxy = F25F90BB1F317DC800FBFE87 /* PBXContainerItemProxy */;
+		};
+		F25F90C71F317DC800FBFE87 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F25F90A01F317DC800FBFE87 /* ZJSentenceAnalyzeDemo */;
+			targetProxy = F25F90C61F317DC800FBFE87 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F25F90AD1F317DC800FBFE87 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F25F90AE1F317DC800FBFE87 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F25F90B21F317DC800FBFE87 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F25F90B31F317DC800FBFE87 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F25F90CC1F317DC800FBFE87 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F25F90CD1F317DC800FBFE87 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F25F90CF1F317DC800FBFE87 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 724LG2HP95;
+				INFOPLIST_FILE = ZJSentenceAnalyzeDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ZJ.ZJSentenceAnalyzeDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F25F90D01F317DC800FBFE87 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 724LG2HP95;
+				INFOPLIST_FILE = ZJSentenceAnalyzeDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ZJ.ZJSentenceAnalyzeDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		F25F90D21F317DC800FBFE87 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ZJSentenceAnalyzeDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ZJ.ZJSentenceAnalyzeDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZJSentenceAnalyzeDemo.app/ZJSentenceAnalyzeDemo";
+			};
+			name = Debug;
+		};
+		F25F90D31F317DC800FBFE87 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ZJSentenceAnalyzeDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ZJ.ZJSentenceAnalyzeDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZJSentenceAnalyzeDemo.app/ZJSentenceAnalyzeDemo";
+			};
+			name = Release;
+		};
+		F25F90D51F317DC800FBFE87 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ZJSentenceAnalyzeDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ZJ.ZJSentenceAnalyzeDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ZJSentenceAnalyzeDemo;
+			};
+			name = Debug;
+		};
+		F25F90D61F317DC800FBFE87 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ZJSentenceAnalyzeDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ZJ.ZJSentenceAnalyzeDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ZJSentenceAnalyzeDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F25F909C1F317DC700FBFE87 /* Build configuration list for PBXProject "ZJSentenceAnalyzeDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F25F90CC1F317DC800FBFE87 /* Debug */,
+				F25F90CD1F317DC800FBFE87 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F25F90CE1F317DC800FBFE87 /* Build configuration list for PBXNativeTarget "ZJSentenceAnalyzeDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F25F90CF1F317DC800FBFE87 /* Debug */,
+				F25F90D01F317DC800FBFE87 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F25F90D11F317DC800FBFE87 /* Build configuration list for PBXNativeTarget "ZJSentenceAnalyzeDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F25F90D21F317DC800FBFE87 /* Debug */,
+				F25F90D31F317DC800FBFE87 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F25F90D41F317DC800FBFE87 /* Build configuration list for PBXNativeTarget "ZJSentenceAnalyzeDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F25F90D51F317DC800FBFE87 /* Debug */,
+				F25F90D61F317DC800FBFE87 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F25F90991F317DC700FBFE87 /* Project object */;
+}
