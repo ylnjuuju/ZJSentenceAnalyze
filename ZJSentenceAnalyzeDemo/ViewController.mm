@@ -99,10 +99,9 @@
     //测试
     CGFloat percent = [self similarityPercentWithSentenceA:sentenceA sentenceB:sentenceB];
     _resultLabel.text = [NSString stringWithFormat:@"%f", percent];
-    if (percent > 0.7) {
-        NSLog(@"\n*******************\n%@\n%@\n近似度余弦法:%f\n*******************", stringA, stringB, percent);
-        NSLog(@"");
-    }
+
+//    CGFloat percent = [self similarPercentWithStringA:stringA andStringB:stringB];
+//    _resultLabel.text = [NSString stringWithFormat:@"%f", percent];
 }
 
 
@@ -111,22 +110,44 @@
  */
 - (NSArray *)stringCutByJieba:(NSString *)string{
     
-    //结巴分词, 转为词数组
-    const char* sentence = [string UTF8String];
-    std::vector<std::string> words;
-    JiebaCut(sentence, words);
-    std::string result;
-    result << words;
-    
-    NSString *relustString = [NSString stringWithUTF8String:result.c_str()].copy;
-    
-    relustString = [relustString stringByReplacingOccurrencesOfString:@"[" withString:@""];
-    relustString = [relustString stringByReplacingOccurrencesOfString:@"]" withString:@""];
-    relustString = [relustString stringByReplacingOccurrencesOfString:@" " withString:@""];
-    relustString = [relustString stringByReplacingOccurrencesOfString:@"\"" withString:@""];
-    NSArray *wordsArray = [relustString componentsSeparatedByString:@","];
-    
-    return wordsArray;
+    if ([self isSentenceIgnore:string]) {
+        
+        NSMutableArray *tempArray = [NSMutableArray array];
+        for (NSInteger i = 0; i < string.length; i++) {
+            [tempArray addObject:[string substringWithRange:NSMakeRange(i, 1)]];
+        }
+        return tempArray.copy;
+        
+    } else {
+        //结巴分词, 转为词数组
+        const char* sentence = [string UTF8String];
+        std::vector<std::string> words;
+        JiebaCut(sentence, words);
+        std::string result;
+        result << words;
+        
+        NSString *relustString = [NSString stringWithUTF8String:result.c_str()].copy;
+        
+        relustString = [relustString stringByReplacingOccurrencesOfString:@"[" withString:@""];
+        relustString = [relustString stringByReplacingOccurrencesOfString:@"]" withString:@""];
+        relustString = [relustString stringByReplacingOccurrencesOfString:@" " withString:@""];
+        relustString = [relustString stringByReplacingOccurrencesOfString:@"\"" withString:@""];
+        NSArray *wordsArray = [relustString componentsSeparatedByString:@","];
+        
+        return wordsArray;
+    }
+}
+
+
+/**
+ 检查是不是纯数字
+ */
+- (BOOL)isSentenceIgnore:(NSString *)string{
+    string = [string stringByTrimmingCharactersInSet:[NSCharacterSet decimalDigitCharacterSet]];
+    if(string.length > 0) {
+        return NO;
+    }
+    return YES;
 }
 
 
@@ -162,44 +183,44 @@
 
 
 //编辑距离分析法 中文不精确, 暂时未使用
-//- (CGFloat)similarPercentWithStringA:(NSString *)stringA andStringB:(NSString *)stringB{
-//    NSInteger n = stringA.length;
-//    NSInteger m = stringB.length;
-//    if (m == 0 || n == 0) return 0;
-//
-//    //Construct a matrix, need C99 support
-//    NSInteger matrix[n + 1][m + 1];
-//    memset(&matrix[0], 0, m + 1);
-//    for(NSInteger i=1; i<=n; i++) {
-//        memset(&matrix[i], 0, m + 1);
-//        matrix[i][0] = i;
-//    }
-//    for(NSInteger i = 1; i <= m; i++) {
-//        matrix[0][i] = i;
-//    }
-//    for(NSInteger i = 1; i <= n; i++) {
-//        unichar si = [stringA characterAtIndex:i - 1];
-//        for(NSInteger j = 1; j <= m; j++) {
-//            unichar dj = [stringB characterAtIndex:j-1];
-//            NSInteger cost;
-//            if(si == dj){
-//                cost = 0;
-//            } else {
-//                cost = 1;
-//            }
-//            const NSInteger above = matrix[i - 1][j] + 1;
-//            const NSInteger left = matrix[i][j - 1] + 1;
-//            const NSInteger diag = matrix[i - 1][j - 1] + cost;
-//            matrix[i][j] = MIN(above, MIN(left, diag));
-//        }
-//    }
-//
-//    CGFloat percent = 1.0 - (CGFloat)matrix[n][m] / stringA.length;
-//    if (percent > 1) {
-//        percent = 0;
-//    }
-//
-//    return MAX(percent, 0);
-//}
+- (CGFloat)similarPercentWithStringA:(NSString *)stringA andStringB:(NSString *)stringB{
+    NSInteger n = stringA.length;
+    NSInteger m = stringB.length;
+    if (m == 0 || n == 0) return 0;
+
+    //Construct a matrix, need C99 support
+    NSInteger matrix[n + 1][m + 1];
+    memset(&matrix[0], 0, m + 1);
+    for(NSInteger i=1; i<=n; i++) {
+        memset(&matrix[i], 0, m + 1);
+        matrix[i][0] = i;
+    }
+    for(NSInteger i = 1; i <= m; i++) {
+        matrix[0][i] = i;
+    }
+    for(NSInteger i = 1; i <= n; i++) {
+        unichar si = [stringA characterAtIndex:i - 1];
+        for(NSInteger j = 1; j <= m; j++) {
+            unichar dj = [stringB characterAtIndex:j-1];
+            NSInteger cost;
+            if(si == dj){
+                cost = 0;
+            } else {
+                cost = 1;
+            }
+            const NSInteger above = matrix[i - 1][j] + 1;
+            const NSInteger left = matrix[i][j - 1] + 1;
+            const NSInteger diag = matrix[i - 1][j - 1] + cost;
+            matrix[i][j] = MIN(above, MIN(left, diag));
+        }
+    }
+
+    CGFloat percent = 1.0 - (CGFloat)matrix[n][m] / stringA.length;
+    if (percent > 1) {
+        percent = 0;
+    }
+
+    return MAX(percent, 0);
+}
 
 @end

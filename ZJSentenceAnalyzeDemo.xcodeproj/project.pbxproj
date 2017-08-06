@@ -525,6 +525,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 724LG2HP95;
 				INFOPLIST_FILE = ZJSentenceAnalyzeDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ZJ.ZJSentenceAnalyzeDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -537,6 +538,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 724LG2HP95;
 				INFOPLIST_FILE = ZJSentenceAnalyzeDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ZJ.ZJSentenceAnalyzeDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -608,6 +610,7 @@
 				F25F90D01F317DC800FBFE87 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F25F90D11F317DC800FBFE87 /* Build configuration list for PBXNativeTarget "ZJSentenceAnalyzeDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -616,6 +619,7 @@
 				F25F90D31F317DC800FBFE87 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F25F90D41F317DC800FBFE87 /* Build configuration list for PBXNativeTarget "ZJSentenceAnalyzeDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -624,6 +628,7 @@
 				F25F90D61F317DC800FBFE87 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
