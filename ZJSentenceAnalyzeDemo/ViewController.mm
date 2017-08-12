@@ -176,7 +176,7 @@
         C += value2.integerValue * value2.integerValue;
     }];
     
-    CGFloat percent = A / (sqrt(B) * sqrt(C));
+    CGFloat percent = 1 - acos(A / (sqrt(B) * sqrt(C))) / M_PI;
     
     return percent;
 }
