@@ -299,7 +299,7 @@ iosjieba.bundle/dict/user.dict.utf8
 
 
 以上.
-题外话:App已上架, 名字叫:斗鱼伴侣, 功能点还挺多的
+题外话:App已上架, 名字叫:直播伴侣, 功能点还挺多的
 其中绘图(quartz2D),动画(CoreAnimation/lottie)运用的都挺多的.
 感觉大家会有兴趣, 有需要可以写写经验.
 App大家可以下下来看看, 顺便给个好评, 3Q!
