@@ -110,7 +110,9 @@
  */
 - (NSArray *)stringCutByJieba:(NSString *)string{
     
-    if ([self isSentenceIgnore:string]) {
+    if (!string) return nil;
+    
+    if ([self isIgnorePureNumber:string]) {
         
         NSMutableArray *tempArray = [NSMutableArray array];
         for (NSInteger i = 0; i < string.length; i++) {
@@ -142,7 +144,7 @@
 /**
  检查是不是纯数字
  */
-- (BOOL)isSentenceIgnore:(NSString *)string{
+- (BOOL)isIgnorePureNumber:(NSString *)string{
     string = [string stringByTrimmingCharactersInSet:[NSCharacterSet decimalDigitCharacterSet]];
     if(string.length > 0) {
         return NO;
